@@ -1,0 +1,21 @@
+input:
+  file-path: file:output.txt
+
+output:
+  file-path: output_filtered.txt
+
+distance-check:
+  max-distance: 1000
+
+  home-latitude:
+  home-longitude:
+
+batch:
+  chunk-size: 30
+
+spring:
+  datasource:
+    url: jdbc:h2:mem:routerdb
+    username: sa
+    password: password
+    driverClassName: org.h2.Driver
